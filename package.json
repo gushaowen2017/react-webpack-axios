@@ -1,0 +1,34 @@
+{
+  "name": "react-webpack-axios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel.config.js",
+  "scripts": {
+    "dev": "cross-env PROD_NAME=dev webpack-dev-server --open webpack --config ./webpack/webpack.dev.config.js",
+    "build:test": "cross-env PROD_NAME=test webpack --config ./webpack/webpack.prod.config.js",
+    "build:prod": "cross-env PROD_NAME=prod webpack --config ./webpack/webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gushaowen2017/react-webpack-axios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gushaowen2017/react-webpack-axios/issues"
+  },
+  "homepage": "https://github.com/gushaowen2017/react-webpack-axios#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  }
+}
