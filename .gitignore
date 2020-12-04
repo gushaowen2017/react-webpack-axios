@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea
+.idea/*
+.git
+.git/*
+
+# Exclude Node.js packages
+node_modules/
+
+*.xml
