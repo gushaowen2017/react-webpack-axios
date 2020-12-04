@@ -1,9 +1,12 @@
-console.log('谷邵文')
-const home_text = require('./page/home');
-import './assets/common.css'
+import React from 'react';
+import ReactDom from 'react-dom';
+import "@babel/polyfill"
 
-const text_p = document.getElementById('text-p');
+console.log('process.env.PROD_NAME:' + process.env.PROD_NAME)
+import './styles/reset.css'
+import './styles/common.less'
+import './styles/index.less'
+import './styles/SideNav.less'
 
-console.log(process.env.PROD_NAME)
-
-text_p.innerHTML = process.env.PROD_NAME + "_____" + home_text.text;
+import App from './App'
+ReactDom.render(<App />, document.getElementById('app'))

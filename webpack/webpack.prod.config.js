@@ -1,9 +1,6 @@
-const webpack = require('webpack');
 const WebpackMerge = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.config');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"); // 压缩css代码
-
-console.log('welcome', process.env.PROD_NAME);
 
 const prodWebpackConfig = WebpackMerge.merge(baseWebpackConfig, {
     mode: 'production',
@@ -13,10 +10,6 @@ const prodWebpackConfig = WebpackMerge.merge(baseWebpackConfig, {
             new OptimizeCSSAssetsPlugin({})   // 压缩css代码，去掉空格这些，在安装在生产环境下
         ]
     },
-    plugins: [
-        new webpack.DefinePlugin({
-            'process.env.PROD_NAME': JSON.stringify(process.env.PROD_NAME), // 此插件用于定义一些源文件可以拿到的变量
-        })
-    ]
+    plugins: []
 });
 module.exports = prodWebpackConfig;
