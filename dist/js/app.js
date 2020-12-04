@@ -107,11 +107,12 @@ __webpack_require__.r(__webpack_exports__);
 console.log('谷邵文')
 const home_text = __webpack_require__(0);
 
+
 const text_p = document.getElementById('text-p');
 
 console.log("prod")
- 
-text_p.innerHTML = "prod" + "_____" +home_text.text;
+
+text_p.innerHTML = "prod" + "_____" + home_text.text;
 
 /***/ })
 /******/ ]);

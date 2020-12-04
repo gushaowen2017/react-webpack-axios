@@ -1,3 +1,4 @@
+/* 最初始的config，用不上了
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -38,4 +39,4 @@ module.exports = {
 	  		template: './index.html', // 以哪一个html为模版
 	  	}),
 	]
-}
+}*/
