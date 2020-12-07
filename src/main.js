@@ -6,7 +6,6 @@ console.log('process.env.PROD_NAME:' + process.env.PROD_NAME)
 import './styles/reset.css'
 import './styles/common.less'
 import './styles/index.less'
-import './styles/SideNav.less'
 
-import App from './App'
-ReactDom.render(<App />, document.getElementById('app'))
+// import App from './App'
+// ReactDom.render(, document.getElementById('app'))
