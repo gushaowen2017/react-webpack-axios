@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../assets/logo.svg';
-import style from "../styles/index.module.css";
-
-console.log(style);
+import * as style from "../styles/index.css";
 
 export default class ClassComponent extends Component {
     render () {
