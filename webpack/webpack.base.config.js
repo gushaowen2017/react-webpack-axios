@@ -36,7 +36,7 @@ module.exports = {
                     },
                     {
                         loader: 'less-loader'
-                    },
+                    }
                 ]
             },
             // {
