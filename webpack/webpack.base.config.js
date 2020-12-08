@@ -25,9 +25,6 @@ module.exports = {
                         // 开发环境不提取css，打包更快
                         loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                     },
-                    // {
-                    //     loader: 'style-loader'
-                    // },
                     {
                         loader: 'css-loader?modules'
                     },

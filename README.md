@@ -19,3 +19,10 @@
 
 # 验证生命周期:Lifecyzhocle
 
+# 组件跨层级通信 - Context, 在Context模式下有两个⻆角⾊色：Provider：外层提供数据的组件; Consumer ：内层获取数据的组件;
+    创建Context => 获取Provider和Consumer => Provider提供值 => Consumer消费值
+
+# Hooks的特点: 可以让你在不编写 class 的情况下使⽤state 以及其他的 React 特性
+    在无需修改组件结构的情况下复用状态逻辑
+    可将组件中相互关联的部分拆分成更小的函数,复杂组件将变得更容理解
+    更更简洁
